@@ -1,5 +1,5 @@
 :root {
-    --color-background: #F3F3F3;
+    --color-background: #0f0202;
     --color-background-nav: #2B3D50;
     --color-background-home: #344960;
     --color-text-light: #EDEDED;
@@ -17,4 +17,17 @@
 html,
 body {
     background-color: var( --color-background);
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s opacity;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.container {
+    width: 90%;
 }
