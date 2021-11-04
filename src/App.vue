@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <Header />
+    <router-view path="$router.key"/>
+    <Footer />
 
   </div>
 </template>
@@ -8,13 +10,14 @@
 <script>
 
 import './styles/global.css';
-import Header from './components/Header.vue'
+import Header from './components/Header'
+import Footer from './components/Footer';
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    Header
-
+    Header,
+    Footer
   }
 }
 </script>

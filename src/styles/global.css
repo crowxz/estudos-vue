@@ -1,10 +1,10 @@
 :root {
-    --color-background: #0f0202;
+    --color-background: #f0e2e2;
     --color-background-nav: #2B3D50;
     --color-background-home: #344960;
     --color-text-light: #EDEDED;
-    --color-text-title: #FF5555;
-    --color-text-dark: #3D3D3D;
+    --color-text-title: #0c0000;
+    --color-text-dark: rgb(58, 8, 8);
 }
 
 * {
@@ -30,4 +30,17 @@ a:hover {
 
 .container {
     width: 90%;
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--color-text-title);
+    margin: 40px 0;
+    font-size: 30px;
 }
